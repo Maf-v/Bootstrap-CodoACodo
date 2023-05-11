@@ -4,6 +4,10 @@
     background-color: blueviolet;
 }
 
+.prueba2 {
+    background-color: rgb(86, 226, 43);
+}
+
 .logoContainer a {
     width: 15vw;
 }
@@ -83,6 +87,41 @@
 .buttonTicket {
     background-color: rgb(41, 167, 67);
     color: white;
+}
+
+/* Section Oradores */
+.tituloOradores {
+    height: 10vh;
+}
+
+.tituloOradores h2 span {
+    font-size: 0.7rem;
+}
+
+.padreCardsMobile {
+    height: 85%;
+    width: 85%;
+}
+
+.padreCardsMobile .card {
+    height: 30%;
+}
+
+.padreCardsMobile .card .img-fluid {
+    object-fit: cover;
+    height: 100%;
+}
+
+.padreCardsMobile .card .btn-sm {
+    padding: 0.1rem 0.25rem;
+    font-size: 0.5rem;
+}
+
+.padreCardsMobile .card p {
+    font-family: 'Calibri', sans-serif;
+    color: rgb(63, 68, 75);
+    font-size: 0.65rem;
+    font-weight: 400;
 }
 
 /* media query para tablet */
