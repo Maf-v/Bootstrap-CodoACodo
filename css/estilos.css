@@ -127,13 +127,8 @@
     .logoContainer a {
         width: 5vw;
     }
-    
-    .logoContainer img {
-        width: 100%;
-    }
 
     .contenidoConferencia {
-        position:absolute;
         bottom: 10rem;
         right: 7rem;
         z-index: 3;
@@ -168,25 +163,10 @@
     }
 
     .contenidoConferencia {
-        position:absolute;
         bottom: 7rem;
         right: 10rem;
         z-index: 3;
         width: 40%;
-    }
-
-    .buttonOrador {
-        padding: 0.5rem 0.9rem;
-        margin-right: 0.7rem;
-        font-size: 0.8rem;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .buttonTicket {
-        font-size: 0.8rem;
-        border-radius: 5px;
-        padding: 0.5rem 0.9rem;
-        font-family: 'Montserrat', sans-serif;
     }
 
 }
