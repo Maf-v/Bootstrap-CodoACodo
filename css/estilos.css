@@ -208,4 +208,21 @@
         width: 40%;
     }
 
+    /* Section Oradores */
+    .padreCardsDesktop {
+        height: 100vh;
+    }
+
+    .btn-desktop {
+        padding: 0.1rem 0.25rem;
+        font-size: 0.8rem;
+        border-radius: .2rem;
+        font-weight: 500;
+    }
+
+    .padreCardsDesktop .card .card-text {
+        font-size: 0.8rem;
+    }
+
+
 }
