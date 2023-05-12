@@ -14,8 +14,7 @@
         <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
         
     </head>
-    <!--sintaxsis de atributo en linea
-     <body style="background-color: rgb(249, 159, 174);">-->
+
     <body>
        <header class="vh-100">
             <nav class="navbar navbar-expand-lg navbar-dark pt-0 pb-0">
@@ -51,7 +50,7 @@
                 </div>
             </nav>
             
-            <section id ="laConferencia" class="vh-100 position-absolute top-0 laConferencia">
+            <section id ="laConferencia" class="vh-100 w-100 position-absolute top-0 laConferencia">
                 <!-- Carousel Mobile -->
                 <div id="carouselExampleAutoplaying" class="carousel slide d-md-none" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -119,8 +118,8 @@
             </section>
        </header>
        <main>
-            <section id="losOradores" class="sectionOradores vh-100 mb-3">
-                <div class="tituloOradores row align-items-center">
+            <section id="losOradores" class="sectionOradores vh-100 mb-md-5">
+                <div class="tituloOradores w-100 row align-items-center">
                     <h2 class="h4 text-center align-middle mb-0"><span class="fw-normal">CONOCE A LOS</span> <br > ORADORES</h2>
                 </div>
 
@@ -184,7 +183,7 @@
                 <!-- Cards Desktop -->
                 <div class="padreCardsDesktop row row-cols-1 row-cols-md-3 g-4 w-75 m-auto d-none d-md-flex">
                     <div class="col">
-                      <div class="card h-auto">
+                      <div class="card">
                         <img src="./assets/img/stevej.jpg" class="card-img-top" alt="Steve Jobs">
                         <div class="card-body">
                           <div class="d-grid gap-2 d-flex mb-2">
@@ -197,7 +196,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-auto">
+                      <div class="card">
                         <img src="./assets/img/bill.jpg" class="card-img-top" alt="Bill Gates">
                         <div class="card-body">
                           <div class="d-grid gap-2 d-flex mb-2">
@@ -210,7 +209,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-auto">
+                      <div class="card">
                         <img src="./assets/img/ada.jpeg" class="card-img-top" alt="Ada">
                         <div class="card-body">
                             <div class="d-grid gap-2 d-flex mb-2">
@@ -226,42 +225,56 @@
 
             </section>
 
-            <section id="lugarYfecha" class="lugarFecha">
-                <div class="left"></div>
-                <div class="right">
-                    <div class="rightContent">
+            <section id="lugarYfecha" class="lugarFecha row ms-0 me-0">
+                <div class="left col-sm-0 col-md-6 d-sm-none d-none d-md-block p-0"></div>
+                <div class="right col-sm-12 col-md-6 p-3">
+                    <div class="rightContent p-1 mt-0 mb-0 ms-auto me-auto">
                         <h2>Bs.As - Octubre</h2>
-                        <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                        <a href="">Conocé Más</a>
+                        <p class="card-text small">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                        <a href="#" class="btn btn-outline-light btn-sm" tabindex="-1" role="button" aria-disabled="true">Conocé Más</a>
                     </div>
                 </div>
             </section>
-            <section id="convierteteEnOrador" class="convierteteEnOrador">
-                <h2 class="tituloForm"><span>CONVIERTETE EN UN </span> <br> ORADOR</h2>
-                <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
-                <form class="oradoresForm" action="" autocomplete="on">
-                    <div class="inputsContainer">
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="text" placeholder="Apellido" required>
+
+            <section id="convierteteEnOrador" class="convierteteEnOrador mb-3">
+              <div class="tituloOradores w-100 row align-items-center mt-3">
+                <h2 class="h4 text-center align-middle mb-0"><span class="fw-normal">CONVIERTETE EN UN </span> <br > ORADOR</h2>
+              </div>
+
+              <p class="text-center mt-3 mb-4 me-auto ms-auto">Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+              <form class="oradoresForm" action="" autocomplete="on">
+                  <div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                     </div>
-                    <textarea name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required></textarea>
-                    <p>Recuerda incluir un título para tu charla</p>
-                    <input type="submit" value="Enviar">
-                </form>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                  </div>
+                  <div class="">
+                    <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="4" placeholder="Sobre que quieres hablar?"></textarea>
+                  </div>
+                  <div id="passwordHelpBlock" class="form-text mt-0">
+                    Recuerda incluir un título para tu charla
+                  </div>
+                  <div class="d-grid mt-2">
+                    <button class="btn" type="button">Enviar</button>
+                  </div>
+              </form>
             </section>
        </main>
      
        <footer class="footer">
-            <div class="footerLinks">
-                <a href="">Preguntas frecuentes</a>
-                <a href="">Contáctanos</a>
-                <a href="">Prensa</a>
-                <a href="">Conferencias</a>
-                <a href="">Términos y condiciones</a>
-                <a href="">Privacidad</a>                
-                <a href="">Estudiantes</a>                
-            </div>
+            <div class="row p-2 pt-3 pb-3 col-sm-12 col-md-9 d-flex justify-content-between mt-0 mb-0 ms-auto me-auto h-100">
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Preguntas frecuentes</a>
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Contáctanos</a>
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Prensa</a>
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Conferencias</a>
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Términos y condiciones</a>
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Privacidad</a>                
+              <a href="#" class="text-white text-center text-decoration-none fs-light col-sm-3 h-auto">Estudiantes</a> 
 
+            </div>
        </footer>
 
        <!-- Incluye la biblioteca JavaScript de Bootstrap -->

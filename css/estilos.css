@@ -124,59 +124,75 @@
     font-weight: 400;
 }
 
-/* media query para tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px)  {
-    .navbar-collapse {
-        position: relative;
-    }
-
-    .navbar {
-        background-color: #212529
-    }
-
-    .nav-item {
-        border-bottom: none;
-    }
-
-    .logoContainer a {
-        width: 5vw;
-    }
-
-    .contenidoConferencia {
-        bottom: 10rem;
-        right: 7rem;
-        width: 50%;
-    }
+/*Section Lugar y Fecha */
+.lugarFecha{
+    font-family: 'Calibri', sans-serif;
 }
 
-/* media query para pantallas intermedias */
-@media screen and (min-width: 1200px) and (max-width: 1365px) {
-    .navbar-collapse {
-        position: relative;
-    }
+.left {
+    border-right:1px solid white;
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
 
-    .navbar {
-        background-color: #212529
-    }
+.right{
+    background-color: rgb(53, 58, 64);
+    color:white;
+}
 
-    .nav-item {
-        border-bottom: none;
-    }
+/* Section Form */
+.oradoresForm {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    .logoContainer a {
-        width: 5vw;
-    }
+.convierteteEnOrador p {
+    width: 90%;
+    font-size: 0.9rem;
+}
 
+.convierteteEnOrador > p > span {
+    border-bottom: 0.15rem dotted;
+}
+
+.oradoresForm .btn {
+    background-color: rgb(150, 201, 62);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(30, 70, 95);
+    height: 30vh;
+}
+
+footer .row {
+    align-items: center;
+}
+
+footer .row a {
+    width: 30%;
+    height: 50%;
+}
+
+/* media query para tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .contenidoConferencia {
-        bottom: 10rem;
+        bottom: 9rem;
         right: 7rem;
         z-index: 3;
-        width: 50%;
+        width: 70%;
+    }
+
+    .padreCardsDesktop .card {
+        height: 100%;
     }
 }
 
 /* media query para escritorio */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
     .navbar-collapse {
         position: relative;
     }
@@ -220,9 +236,32 @@
         font-weight: 500;
     }
 
+    .padreCardsDesktop .card {
+        height: 90%;
+    }
+
     .padreCardsDesktop .card .card-text {
         font-size: 0.8rem;
     }
 
+    /* Section Lugar y Fecha*/
+    .lugarFecha {
+        height: 60vh;
+    }
+
+    /* Section Form */
+    .oradoresForm {
+        width: 60%;
+    }
+
+    /* Footer */
+    .footer{
+        height: 15vh;
+    }
+
+    footer .row a {
+        width: 8vw;
+        height: 100%;
+    }
 
 }
