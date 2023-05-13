@@ -74,7 +74,7 @@
 
 /* Section Conferencia Bs AS */
 .contenidoConferencia {
-    bottom: 5rem;
+    bottom: 6.5rem;
     right: 3rem;
     z-index: 3;
     width: 80%;
@@ -165,23 +165,17 @@
 /* Footer */
 footer {
     background-color: rgb(30, 70, 95);
-    height: 30vh;
 }
 
 footer .row {
     align-items: center;
 }
 
-footer .row a {
-    width: 30%;
-    height: 50%;
-}
-
 /* media query para tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 576px) and (max-width: 991px) {
     .contenidoConferencia {
-        bottom: 9rem;
-        right: 7rem;
+        bottom: 7.5rem;
+        right: 5.5rem;
         z-index: 3;
         width: 70%;
     }
@@ -192,7 +186,7 @@ footer .row a {
 }
 
 /* media query para escritorio */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     .navbar-collapse {
         position: relative;
     }
@@ -258,10 +252,9 @@ footer .row a {
     .footer{
         height: 15vh;
     }
-
-    footer .row a {
-        width: 8vw;
-        height: 100%;
+    
+    .footer .row {
+        width: 75%;
     }
 
 }
