@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+
+.logoContainer a {
+    width: 15vw;
+}
+
+.navbar-collapse {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    top: 100%;
+    padding: 0.5rem;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    height: 15vh;
+    z-index: 15;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+}
+
+.navbar-dark .navbar-nav .nav-link.comprarTickets {
+    color: rgb(41, 167, 66);
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(30, 70, 95);
+}
+
+footer .row {
+    align-items: center;
+}
+
+/* media query para escritorio */
+@media screen and (min-width: 992px) {
+    .header {
+        height: 100vh;
+        min-height: 600px;
+    }
+
+    .laConferencia {
+        height: 100%;
+        min-height: 600px;
+    }
+
+    .carrousel-item {
+        height: 100%;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .navbar-collapse {
+        position: relative;
+    }
+
+    .navbar {
+        background-color: rgb(53, 58, 63);
+    }
+
+    .nav-item {
+        border-bottom: none;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: rgba(189, 196, 199, 0.699);
+    }
+
+    .navbar-dark .navbar-nav .nav-link.comprarTickets {
+        font-weight: 400;
+    }
+
+    .logoContainer a {
+        width: 5vw;
+    }
+
+    .contenidoConferencia {
+        bottom: 7rem;
+        right: 10rem;
+        z-index: 3;
+        width: 40%;
+    }
+
+    /* Main */
+    .vh-50 {
+        height: 35vh;
+        min-height: 200px;
+        width: 60vw;
+    }
+
+    /* Form */
+    .vw-60 {
+        width: 60vw;
+    }
+
+    .buttonForm {
+        width: 49%;
+        background-color: rgb(150, 201, 62);
+        color: white;
+    }
+
+    .buttonForm:hover {
+        color: white;
+        background-color: rgb(132, 190, 30);
+    }
+
+    /* Footer */
+    .footer{
+        height: 15vh;
+    }
+    
+    .footer .row {
+        width: 75%;
+    }
+
+}
