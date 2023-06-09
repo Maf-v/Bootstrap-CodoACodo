@@ -82,14 +82,16 @@
              
              <form class="vw-60 m-auto mt-4" action="">
                 <div class="row g-3 mb-3">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    <div class="col" id="nombreContainer">
+                      <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" aria-label="First name">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                      <input type="text" id="inputApellido" class="form-control" placeholder="Apellido" aria-label="Last name">
                     </div>
                 </div>
-                <input type="text" class="form-control mb-3" placeholder="Correo" aria-label="Correo">
+                <div class="mb-3" id="correoContainer">
+                    <input type="text" id="inputCorreo" class="form-control" placeholder="Correo" aria-label="Correo">
+                </div>
                 <div class="row g-3 mb-3">
                     <div class="col">
                         <label for="cantidad" class="form-label">Cantidad</label>
@@ -102,18 +104,18 @@
                             <option value="1">Estudiante</option>
                             <option value="2">Trainee</option>
                             <option value="3">Juniors</option>
-                          </select>
+                        </select>
                     </div>
                 </div>
+                <div class="alert alert-primary vw-60 m-auto mt-4" role="alert">
+                   Total a pagar: $
+                   <span id="total"></span>
+                </div>
+                <div class="vw-60 mx-auto mt-4 mb-4 d-flex justify-content-between">
+                   <button type="reset" id="reset" class="btn buttonForm">Borrar</button>
+                   <button type="button" id="submit" class="btn buttonForm">Resumen</button>
+                </div>
              </form>
-             <div class="alert alert-primary vw-60 m-auto mt-4" role="alert">
-                Total a pagar: $
-                <span></span>
-             </div>
-             <div class="vw-60 mx-auto mt-4 mb-4 d-flex justify-content-between">
-                <button type="button" class="btn buttonForm">Borrar</button>
-                <button type="button" class="btn buttonForm">Resumen</button>
-             </div>
          </section>
         </main>
      
